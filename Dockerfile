@@ -6,9 +6,9 @@ RUN apk add --no-cache make gcc g++ python git openssh-client\
     && mkdir /root/.ssh/ \
     && ssh-keyscan github.com > ~/.ssh/known_hosts
 # 拉取程式碼
-RUN git clone https://github.com/gnehs/PokaPlayer.git
+RUN git clone https://github.com/cxw620/PokaPlayer.git
 # 覆蓋拉取的程式碼避免干擾到 dev
-COPY . /app 
+COPY . /app
 # node modules
 RUN npm install --production
 # 環境設定
@@ -16,4 +16,3 @@ ENV NODE_ENV=production
 EXPOSE 3000
 # 啟動
 CMD ["npm", "start"]
-
