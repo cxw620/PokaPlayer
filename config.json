@@ -1,36 +1,35 @@
 {
     "PokaPlayer": {
-        "debug": false
+        "debug": true
     },
-    "mongodb": "mongodb://mongodb/poka",
+    "mongodb": "mongodb://172.17.0.5:27017",
     "DSM": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "https",
-        "host": "192.168.x.x",
+        "host": "nas.wjxhub.xyz",
         "port": 5000,
-        "account": "YOUR_DSM_ACCOUNT",
-        "password": "YOUR_DSM_PASSWORD",
+        "account": "test",
+        "password": "test",
         "showPins": false
     },
     "neteaseLyric": {
-        "enabled": false
+        "enabled": true
     },
     "Netease2": {
-        "enabled": false,
-        "server": "http://neteaseapi2:3000/",
+        "enabled": true,
+        "server": "https://api.163.wjxhub.xyz/",
         "isPremium": true,
         "topPlaylist": {
-            "enabled": true,
+            "enabled": false,
             "category": "ACG",
             "limit": 6,
             "order": "hot",
             "image": "https://i.imgur.com/ZFaycMw.gif"
         },
         "login": {
-            "//": "信箱或電話兩者選一",
-            "email": "YOUR_NETEASE_EMAIL",
-            "phone": "YOUR_NETEASE_PHONE_NUMBER",
-            "password": "YOUR_NETEASE_PASSWORD"
+            "email": "null"
+            "phone": "17875880982",
+            "password": "CxwYW655123@123"
         },
         "dailyRecommendSongs": {
             "enabled": true,
